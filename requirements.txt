@@ -1,0 +1,7 @@
+timeout-decorator
+loguru
+flask
+fastapi
+text2vec
+openai
+sentence_transformers
