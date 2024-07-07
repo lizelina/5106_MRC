@@ -74,7 +74,7 @@ bert_model = SentenceModel("./opt/M3E-large")
 
 
 def inference_batch(system_prompt, prompts):
-    client = OpenAI(api_key="")
+    client = OpenAI(api_key="sk-proj-nNdiPgfLWl0jukvuz04jT3BlbkFJ5oSYpB5qwXfcaw5Byr1t")
     messages = [{"role": "system", "content": system_prompt}]
     messages.extend([{"role": "user", "content": prompt} for prompt in prompts])
 

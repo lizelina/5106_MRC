@@ -74,7 +74,7 @@ bert_model = SentenceModel("./opt/M3E-large")
 
 
 def inference(system_prompt, prompt):
-    client = OpenAI(api_key="")
+    client = OpenAI(api_key="sk-proj-nNdiPgfLWl0jukvuz04jT3BlbkFJ5oSYpB5qwXfcaw5Byr1t")
     res = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
