@@ -74,9 +74,9 @@ bert_model = SentenceModel("./opt/M3E-large")
 
 
 def inference(system_prompt, prompt):
-    client = OpenAI(api_key="sk-proj-nNdiPgfLWl0jukvuz04jT3BlbkFJ5oSYpB5qwXfcaw5Byr1t")
+    client = OpenAI(api_key="sk-3e14a64cf0b8450ab3c0056c800f74cc", base_url="https://api.deepseek.com")
     res = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="deepseek-chat",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt}
