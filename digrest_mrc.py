@@ -145,7 +145,7 @@ def extract_passage(question, context):
     prompt = '文章：{context}\n\n问题：{question}\n\n'.format(context=context, question=question)
     prompt += POST_PROMPT
     try:
-        preds = retry_n_times(question, context, 3)
+        preds = retry_n_times(question, context, 2)
     except Exception as e:
         logger.error(f'错误信息：{e}, {traceback.format_exc()}')
         ans = [{"start": 0, "end": len(context) - 1}]
